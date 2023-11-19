@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Header -->
+
+    <header>
+      <h1>E-Ticaret</h1>
+      <input type="text" placeholder="ürün ismi giriniz" />
+      <div>
+        <button id="open-button">Sepet</button>
+        <button>Kayıt Ol</button>
+        <button>Giriş Yap</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="category-wrapper">
+        <h1>Kategoriler</h1>
+        <div class="categories" id="category-list"></div>
+      </div>
+
+      <div class="product-wrapper">
+        <h1>Ürünler</h1>
+        <div class="products" id="products"></div>
+      </div>
+
+      <!--Modal -->
+
+      <div id="modal" class="modal-wrapper">
+        <div class="modal">
+          <img id="close-button" src="./images/close.png" alt="" />
+          <div class="modal-list"></div>
+          <div class="total">Toplam: <span id="total-price">0</span>₺</div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="foot">
+        <p>Tüm Hakları Saklıdır</p>
+        <div class="icon-a">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAW5JREFUSEvFlc1NQ0EMhCdNcAUqAS7cKQAJKgEk+gDK4ARUws+BOxUEfcjzZO1zNhuhp+wlSmJ7xuNZ70oLn9XC9bU3gCNJV5JOJJ12uvyI/14l3Uny9yml6oDCDxFBAsm9AxlIEPsk6TYHtwAEv0fRsx3mQ95LxF9nUi0AzOnguGq3ALwMaX4kXVTkWgDY02rFHmCYHkp6k/Qo6VzSs6Sv+N1dTPktwDoSadOHonTWDhsi95K+JR2E/gAQjwJ/ZwSAJIrjEgZoh91Et1OxIEKnU91tAHaUi+cx+D/ksNM8wy5ALtYbuh1XxQ8DIAlSbHIVM/sXANozg0oig2MIHMUZkohgu8gO4tO3NA8Z7bOldwaAVc+mFM/7ZyvA7KJE6943LL/PKGpZsrNmF7VaFejeMhtZS3ZVlnh20RzkdTFbvxuQsoz5XpQPji9Q3vUj65qY7KhyVeT9g/+tfQ/AbwYum70de3syR4Y6FLN4B78fNGgZwcR3kQAAAABJRU5ErkJggg=="/>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARBJREFUSEvlldENwjAMRK+bwCTAJMAkwCTAJMAksAnoVTFKUydNPvpVSxUtSXz23dXtNHN0M+fXcgG2kk6SVoHiu6RzeD6E+34ppegh6SjpU9CGBFdnnTMAcv5m6ynANyS3ijwc9uQCkKckzvM76AD0d3TyEiqJu8lVHwPuLHmOIvi1IDkXFRkFHj22H2qg6B8pRVQYi9f6mhQBUopak7N/IHANRa0g69SBKUV0gVXN360Ao8ngjQpE3ktCj5YY0eNRxH81VkyBcRj0jCI37HjtcVNtDLxfsmm8hg5m2xKQS40d8DowgelgSods5R5Ai4OYM1NDscfwbIqLNsGqsV0R8uXMp6JOy/2i1dp3/o/+D9mWMhnNBgLxAAAAAElFTkSuQmCC"/>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOZJREFUSEvtleEJwkAMhV830U10E51EnUSdRDfRTZRPGonhSq54FX80UEohly95L0c7TRzdxPU1A1KFvUQrSRdJd0lnSfv09GfCRtIxnveAm6SFO3OStK2EUBiABU0u+fCAR6EYieu+qxKLhijO9DFetTMAOUOSmSRDQ1YDrMDB+YJXpa49bDTApuHtvWo2QaXf77R0ArYIGbJu8YgnSpYC0BzILqygn+Tabxl3hrxRHpipTMDGxALe9K8A1hUgtofgAtK9RROAbQ96x2gGGNqk/wDELryJ2R2IZ/GIDZz/aJlyP5DoCXszORl0uuCcAAAAAElFTkSuQmCC"/>
+        </div>
+
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
